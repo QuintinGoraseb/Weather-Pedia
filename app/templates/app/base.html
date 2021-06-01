@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="{% static 'img/fav.png' %}" rel="icon">
+    <link href="assets/img/favicon/apple-icon.png" rel="apple-touch-icon">
+    <!--<script src="https://kit.fontawesome.com/657c7cf7e9.js" crossorigin="anonymous"></script>-->
+    {% if title %}
+    <title>Weather-Pedia- {{ title }}</title>
+    {% else %}
+    <title>Weather-Pedia</title>
+    {% endif %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css ">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet " href="{% static 'vendor/linericon/style.css' %} ">
+    <link href="{% static 'vendor/remixicon/remixicon.css' %} " rel="stylesheet ">
+
+    <link rel="stylesheet " href="{% static 'css/bootstrap.min.css' %} ">
+    <link rel="stylesheet " href="{% static 'css/bootstrap.css' %} ">
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/styles.css' %} " rel="stylesheet ">
+
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="navbar navbar-expand-md fixed-top ">
+            <div class="container ">
+                <h1 class="navbar-brand "><img src="{% static 'img/fav.png' %} " alt=" "><a href="index.html ">weather<span style="font-style: italic ">-pedia</span><span>.</span></a></h1>
+                <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarCollapse " aria-controls="navbarCollapse " aria-expanded="false " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarCollapse ">
+                    <!--<ul class="navbar-nav mr-auto ">
+                        <li class="nav-item active ">
+                            <a class="nav-link " href="index.html ">Home <span class="sr-only ">(current)</span></a>
+                        </li>
+
+                    </ul>-->
+                    <!--<button class="btn get-started-btn " type=" ">GET STARTED</button>-->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header-->
+
+    <!-- ======= Home Banner Area ======= -->
+    <section class="banner_area ">
+        <div class="banner_inner d-flex align-items-center ">
+            <div class="overlay bg-parallax " data-stellar-ratio="0.9 " data-stellar-vertical-offset="0 " data-background=" "></div>
+            <div class="container ">
+                <div class="banner_content text-center ">
+                    <h2>Weather Services</h2>
+                    <div class="page_link ">
+                        <a href="index.html ">Home</a>
+                        <a href="business.html " class="p_link ">Weather Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Banner Area -->
+    {% block content %}{% endblock content %}
+    <!-- ======= Footer ======= -->
+    <footer class="footer_area ">
+        <div class="container ">
+            <div class="row footer_inner ">
+                <div class="col-md-4 ">
+                    <aside class="info_widget ">
+                        <div class="f_title ">
+                            <h5>Interact With Us</h5>
+                        </div>
+                        <p>Follow the links below to our various social media pages.</p>
+                        <ul class="soc_list list-unstyled ">
+                            <li>
+                                <a href="http://www.github.com/quintingoraseb " target="_blank ">
+                                    <i class="iconify " data-icon="akar-icons:github-fill " data-inline="false ">
+                                    </i>
+                                </a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/quintin-goraseb-85a420213/ " target="_blank "><i class="iconify " data-icon="logos:linkedin-icon " data-inline="false "></i></a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="col-md-4 ">
+                    <aside class="nav_widget ">
+                        <div class="f_title ">
+                            <h5>Get In Touch With Us</h5>
+                        </div>
+                        <p>Contact no: +264 000 000 0000</p>
+                        <p>Email: weather@cloudy.com.na</p>
+                        <p>P.O.Box 1234 Eros Windhoek</p>
+
+                    </aside>
+                </div>
+
+                <div class="col-md-4 mb-5 ">
+                    <aside class="time_widget ">
+                        <div class="f_title ">
+                            <h5>Operating hours are</h5>
+                        </div>
+                        <p>Mon-Fri: 8:00 - 17:00</p>
+                        <p>Sat: 9:00 - 13:00</p>
+                        <p>Sun: CLOSED</p>
+                    </aside>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Socket -->
+    <div class="socket text-center py-3 ">
+        <small>&copy; Copyright 2021 Weather-Pedia. All Rights Reserved. <a href="# ">Terms of Use</a>|<a href="# ">Privacy policy</a><br> Developed by: <a href="# ">SOFTLogiQ</a></small>
+    </div>
+    <!-- End Socket -->
+
+    <!-- JavaScript Files -->
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-3.5.1.min.js' %} "></script>
+    <!-- Bootstrap 4.5 JS -->
+    <script src=" {% static 'js/bootstrap.min.js' %} "></script>
+    <!-- Popper JS -->
+    <script src=" {% static 'js/popper.min.js' %} "></script>
+    <!-- Font Awesome -->
+    <script src=" {% static 'js/all.min.js' %} "></script>
+    <!-- Parallax Effects -->
+    <script src=" {% static 'js/stellar.js' %} "></script>
+    <script src=" {% static 'js/theme.js' %} "></script>
+    <!-- Navbar Scrolled -->
+    <script>
+        $(window).scroll(function() {
+            $('nav ').toggleClass('scrolled ', $(this).scrollTop() > 80);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle ').dropdown();
+        });
+    </script>
+
+
+
+</body>
+
+</html>

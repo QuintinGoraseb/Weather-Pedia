@@ -1,0 +1,31 @@
+{% extends "app/base.html" %} {% block content %}
+<section id="weather">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 wapp justify-content-center">
+                <h1 class="text-center">Weather in your city</h1>
+                <form action="" method="get">
+                    <!--<input type=" text " id="city " name="city " placeholder=" Enter City Name " required>-->
+                    <input type="text" id="city" name="city" placeholder="Enter City Name">
+                    <input type="submit" name="send" value="Search City">
+                    <!--<div class="text-center mt-3 ">
+                        <button type="submit " name="send">Search City</button>
+                    </div>-->
+                </form>
+                <hr class="line "> {% if city_name %}
+                <p>
+                    <h3 class="text-center ">The weather in
+                        <span style="color: #0c628c">{{city_name}}</span> is:</h3>
+                    <div class="text-center ">Weather conditions: <span style="color: #0c628c">{{weather_code}}</span></div>
+                    <div class="text-center ">Temperature: <span style="color: #0c628c">{{temp}} <sup>o</sup>C</span></div>
+                    <div class="text-center ">Wind speed: <span style="color: #0c628c">{{wind_speed}} m/s</span></div>
+                    <div class="text-center ">The type of precipitation: <span style="color: #0c628c">{{precipitation_type}}</span></div>
+                </p>
+                {% endif %}
+            </div>
+            <div class="col-md-3 "></div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

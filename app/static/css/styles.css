@@ -1,0 +1,600 @@
+/**
+* Template Name: Glider Business Consulting & Management cc
+* Author: Quintin Jackson Goraseb
+* License: https://softlogiq.com.na/license/
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic');
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    background: #f5f5f5;
+}
+
+a {
+    color: #faba00;
+}
+
+a:hover {
+    color: #faba00;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+}
+
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    color: #faba00;
+    transition: all 0.4s;
+    border: 2px solid #faba00;
+}
+
+.back-to-top i:hover {
+    background: #faba00;
+    color: #1a1814;
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+section {
+    /*padding: 60px 0;*/
+    overflow: hidden;
+}
+
+.section-title {
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #2cb52c;
+    margin: 4px 10px;
+}
+
+.section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #151515;
+}
+
+
+/*--------------------------------------------------------------
+#header Section
+--------------------------------------------------------------*/
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+}
+
+.navbar.scrolled {
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 0;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.navbar.scrolled .navbar-nav .nav-item a {
+    color: #313131;
+}
+
+.navbar.scrolled .navbar-brand a {
+    color: #313131 !important;
+}
+
+.navbar.scrolled .get-started-btn a {
+    color: #313131 !important;
+}
+
+.navbar.scrolled .navbar-nav a:hover,
+.navbar.scrolled .navbar-nav .active a,
+.navbar.scrolled .navbar-nav li:hover a {
+    color: #faba00;
+}
+
+
+/*
+.bg-dark {
+background: transparent !important;
+transition: 1s ease;
+}
+*/
+
+.navbar .navbar-brand {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand a {
+    color: #fff;
+    font-family: "Playfair Display", sans-serif !important;
+}
+
+.navbar .navbar-brand a span {
+    color: #faba00;
+}
+
+.navbar .navbar-brand img {
+    max-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .navbar-brand img {
+        display: none;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+/* Desktop Navigation */
+
+.navbar .navbar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar .navbar-nav {
+    display: flex !important;
+}
+
+.navbar .nav-item {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 0 10px 28px;
+}
+
+.navbar-nav a {
+    display: block;
+    position: relative;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.navbar-nav a:hover,
+.navbar-nav .active a,
+.navbar-nav li:hover a {
+    color: #faba00;
+}
+
+
+/* Get Startet Button */
+
+.get-started-btn {
+    color: #fff;
+    border-radius: 0;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Times New Roman", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    border: 2px solid #faba00;
+}
+
+.get-started-btn:hover {
+    background: #faba00;
+    color: #343a40;
+}
+
+@media (max-width: 768px) {
+    .get-started-btn {
+        margin: 0 48px 0 0;
+        padding: 7px 20px 8px 20px;
+    }
+}
+
+
+/* Mobile Navigation */
+
+.mobile-nav-toggle {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+.mobile-nav-toggle i {
+    color: #fff;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav a {
+    display: block;
+    position: relative;
+    color: #151515;
+    padding: 10px 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active>a,
+.mobile-nav li:hover>a {
+    color: #151515;
+    text-decoration: none;
+    background: #faba00;
+}
+
+.mobile-nav .drop-down>a:after {
+    content: "\ea99";
+    font-family: IcoFont;
+    padding-left: 10px;
+    position: absolute;
+    right: 15px;
+}
+
+.mobile-nav .active.drop-down>a:after {
+    content: "\eaa1";
+}
+
+.mobile-nav .drop-down>a {
+    padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+    display: none;
+    overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+    padding-left: 20px;
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Home Banner Area
+--------------------------------------------------------------*/
+
+.banner_box {
+    max-width: 1620px;
+    margin: auto;
+}
+
+.banner_area {
+    position: relative;
+    z-index: 1;
+    min-height: 430px;
+}
+
+.banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 430px;
+    background: #000;
+    z-index: 1;
+}
+
+.banner_area .banner_inner .overlay {
+    background: url('../img/sky2.jpg') no-repeat scroll center center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 125%;
+    bottom: 0;
+    z-index: -1;
+    opacity: .40;
+}
+
+.banner_area .banner_inner .banner_content {
+    margin-top: 70px;
+}
+
+.banner_area .banner_inner .banner_content h2 {
+    color: #faba00;
+    font-size: 48px;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner_area .banner_inner .banner_content .page_link a {
+    font-size: 14px;
+    color: #fff;
+    font-family: "Playfair Display", sans-serif;
+    margin-right: 32px;
+    position: relative;
+}
+
+.banner_area .banner_inner .banner_content .page_link .p_link {
+    color: #faba00;
+}
+
+.banner_area .banner_inner .banner_content .page_link a:before {
+    content: "\e87a";
+    font-family: 'Linearicons-Free';
+    font-size: 14px;
+    position: absolute;
+    right: -25px;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+.banner_area .banner_inner .banner_content .page_link a:last-child {
+    margin-right: 0px;
+}
+
+.banner_area .banner_inner .banner_content .page_link a:last-child:before {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Weather App
+--------------------------------------------------------------*/
+
+#weather {
+    padding-top: 60px;
+}
+
+.wapp h1 {
+    padding-bottom: 2rem;
+    color: #0c628c;
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: uppercase;
+}
+
+.wapp h3 {
+    padding-top: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: uppercase;
+}
+
+.line {
+    margin-top: 2rem;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer_area {
+    margin-top: 80px;
+    background: #535354;
+}
+
+.info_widget p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.info_widget .soc_list li {
+    margin-right: 17px;
+    display: inline-block;
+}
+
+.info_widget .soc_list li a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 300ms linear 0s;
+}
+
+.info_widget .soc_list li:last-child {
+    margin-right: 0px;
+}
+
+.info_widget .soc_list li:hover a {
+    color: #faba00;
+}
+
+.f_title {
+    margin-top: 4rem;
+    margin-bottom: 12px;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.f_title h5 {
+    display: inline-block;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Times New Roman", sans-serif;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    padding: 1em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav_widget p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.nav_widget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.time_widget p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 604px) {
+    .f_title {
+        margin-top: 2rem;
+        margin-bottom: 12px;
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+
+/** Socket **/
+
+.socket {
+    background-color: #535354;
+    border-top: 1px solid #fff;
+    font-size: 16px !important;
+    color: #f5f5f5;
+}
+
+.socket a {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Playfair Display", sans-serif;
+    color: #faba00 !important;
+    cursor: pointer;
+}
+
+.socket a:hover {
+    color: #f5f5f5 !important;
+    cursor: pointer;
+}
